@@ -1,4 +1,4 @@
-# <p align="center" > تنصيب سورس ديفد
+# <p align="center" > تنصيب سورس فيرو
 # <p align="center" > ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 # <p align="center" > ⤈ ↫ كود التنصيب الاول مع المكاتب ↬ ⤈
 # <p align="center" > `git clone https://github.com/ViruTeam/Viru.git;cd Viru;chmod +x Viru.sh;./Viru.sh install`
