@@ -1,8 +1,8 @@
 ------------------------------------------------
 -- This Source Was Developed By (Rio) @W5555.--
---   This Is The Source Channel @VIRUUTEAM .   --
+--   This Is The Source Channel @FF7IF .   --
 --                - Viru -                 --
---        -- https://t.me/VIRUUTEAM --         --
+--        -- https://t.me/FF7IF --         --
 ------------------------------------------------ 
 DevRio  = dofile("./libs/redis.lua").connect("127.0.0.1", 6379)
 serpent = dofile("./libs/serpent.lua")
@@ -126,7 +126,7 @@ print("\27[36m"..[[
 |             \_/ |_|_|  \___/              |
 |-------------------------------------------|
 | This Source Was Developed By(Viru) @IlTTTl|
-|   This Is The Source Channel @VIRUUTEAM . |
+|   This Is The Source Channel @FF7IF . |
 |                - Viru -                   |
 ---------------------------------------------
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m")
@@ -669,7 +669,7 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "VIRUUTEAM")
+local UserName = (dp.username_ or "FF7IF")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
@@ -1165,19 +1165,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrRio = DevRio:get(Viru.."Comd:New:rt:Rio:"..DEV_ABBAS..msg.chat_id_)
 if mrRio == "مميز" and VipMem(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevRio:set(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS) 
 DevRio:sadd(Viru..'Rio:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrRio == "ادمن" and Admin(msg) then 
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevRio:set(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS)
 DevRio:sadd(Viru..'Rio:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrRio == "مدير" and Manager(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevRio:set(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS)  
 DevRio:sadd(Viru..'Rio:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrRio == "عضو" then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1191,19 +1191,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrRio = DevRio:get(Viru.."Comd:New:rt:Rio:"..DEV_ABBAS..msg.chat_id_)
 if mrRio == "مميز" and VipMem(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevRio:srem(Viru..'Rio:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevRio:del(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrRio == "ادمن" and Admin(msg) then 
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevRio:srem(Viru..'Rio:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevRio:del(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrRio == "مدير" and Manager(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevRio:srem(Viru..'Rio:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevRio:del(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrRio == "عضو" then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1217,19 +1217,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrRio = DevRio:get(Viru.."Comd:New:rt:Rio:"..text1[2]..msg.chat_id_)
 if mrRio == "مميز" and VipMem(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevRio:sadd(Viru..'Rio:VipMem:'..msg.chat_id_, result.id_)
 DevRio:set(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrRio == "ادمن" and Admin(msg) then 
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevRio:sadd(Viru..'Rio:Admins:'..msg.chat_id_, result.id_)
 DevRio:set(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrRio == "مدير" and Manager(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevRio:sadd(Viru..'Rio:Managers:'..msg.chat_id_, result.id_)
 DevRio:set(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrRio == "عضو" then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Rio(msg.chat_id_, msg.id_, 1, "↯︙*المعرف غير صحيح*", 1, 'md')
@@ -1245,19 +1245,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrRio = DevRio:get(Viru.."Comd:New:rt:Rio:"..text1[2]..msg.chat_id_)
 if mrRio == "مميز" and VipMem(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevRio:srem(Viru..'Rio:VipMem:'..msg.chat_id_, result.id_)
 DevRio:del(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrRio == "ادمن" and Admin(msg) then 
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevRio:srem(Viru..'Rio:Admins:'..msg.chat_id_, result.id_)
 DevRio:del(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrRio == "مدير" and Manager(msg) then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevRio:srem(Viru..'Rio:Managers:'..msg.chat_id_, result.id_)
 DevRio:del(Viru.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrRio == "عضو" then
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'VIRUUTEAM')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'FF7IF')..')'..' ❩\n↯︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Rio(msg.chat_id_, msg.id_, 1, "↯︙*المعرف غير صحيح*", 1, 'md')
@@ -1438,8 +1438,8 @@ if text == '/start' and ChCheck(msg) then
 if not DevRio:get(Viru..'Rio:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
 local inline = {
-{{text="↯ المطور .",url="t.me/"..(dp.username_ or "VIRUUTEAM")}},
-{{text="↯ السورس .",url="https://t.me/VIRUUTEAM"},{text="↯ لتنصيب بوت .",url="https://t.me/IlTTTl"}},
+{{text="↯ المطور .",url="t.me/"..(dp.username_ or "FF7IF")}},
+{{text="↯ السورس .",url="https://t.me/FF7IF"},{text="↯ لتنصيب بوت .",url="https://t.me/IlTTTl"}},
 }
 local start = DevRio:get(Viru.."Rio:Start:Bot")
 if start then 
@@ -1456,7 +1456,7 @@ end
 --     Source Viru     --
 if not SecondSudo(msg) and not DevRio:sismember(Viru..'Rio:Ban:Pv',msg.sender_user_id_) and not DevRio:get(Viru..'Rio:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
-Dev_Rio(msg.sender_user_id_, msg.id_, 1, '↯︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "VIRUUTEAM")..')', 1, 'md') 
+Dev_Rio(msg.sender_user_id_, msg.id_, 1, '↯︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "FF7IF")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=DevId,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
@@ -2359,7 +2359,7 @@ Welcomes = '• نورت حبي \n• firstname \n• @username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..msg.content_.members_[0].first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@VIRUUTEAM]'))
+local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@FF7IF]'))
 Dev_Rio(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end
 --     Source Viru     --
@@ -3646,7 +3646,7 @@ Dev_Rio(msg.chat_id_, msg.id_, 1,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ↯︙نقاطي • بيع نقاطي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]], 1, 'md')
 else
 Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙عذرا الالعاب معطله في المجموعه', 1, 'md')
@@ -3813,7 +3813,7 @@ end
 if text == "السورس" or text == "سورس" then 
 Text = [[
 Welcome To Source
-↯︙[Viru Team](https://t.me/VIRUUTEAM)
+↯︙[Viru Team](https://t.me/FF7IF)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -3822,7 +3822,7 @@ keyboard.inline_keyboard = {
 {{text = '↯ Tws Viru',url="https://t.me/iltttbot"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/VIRUUTEAM&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/FF7IF&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source Viru     --
@@ -6013,7 +6013,7 @@ if dp.first_name_ == false then
 Dev_Rio(msg.chat_id_, msg.id_, 1, "↯︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "VIRUUTEAM")
+local UserName = (dp.username_ or "FF7IF")
 Dev_Rio(msg.chat_id_, msg.id_, 1, "↯︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
 end,nil)   
 end
@@ -6230,7 +6230,7 @@ if dp.first_name_ == false then
 Dev_Rio(msg.chat_id_, msg.id_, 1, "↯︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "VIRUUTEAM")
+local UserName = (dp.username_ or "FF7IF")
 Dev_Rio(msg.chat_id_, msg.id_, 1, "↯︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevRio:sadd(Viru.."Rio:RioConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
@@ -8184,7 +8184,7 @@ local TXTE = "↯︙اعدادات المجموعه ↫ ⤈\n┉ ┉ ┉ ┉ ┉
 .."↯︙التكرار ↫ "..flood.."\n"
 .."↯︙عدد التكرار ↫ "..Flood_Num.."\n"
 .."↯︙عدد السبام ↫ "..spam_c.."\n"
-.."┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n↯︙[Source Channel](https://t.me/VIRUUTEAM)\n"
+.."┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n↯︙[Source Channel](https://t.me/FF7IF)\n"
 Dev_Rio(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -8470,7 +8470,7 @@ if animation.Info == true then
 local Text ='*↯︙تم اختيار المتحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation='..URL.escape(animation.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8496,7 +8496,7 @@ if Audios.Info == true then
 local Text ='*↯︙تم اختيار مقطع الميمز لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8522,7 +8522,7 @@ if Audios.Info == true then
 local Text ='*↯︙تم اختيار المقطع الصوتي لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8548,7 +8548,7 @@ if Audios.Info == true then
 local Text ='*↯︙تم اختيار الريمكس لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8574,7 +8574,7 @@ if photo.Info == true then
 local Text ='*↯︙تم اختيار الصوره لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8600,7 +8600,7 @@ if photo.Info == true then
 local Text ='*↯︙تم اختيار صورة الانمي لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8626,7 +8626,7 @@ if photo.Info == true then
 local Text ='*↯︙تم اختيار فلم لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8652,7 +8652,7 @@ if photo.Info == true then
 local Text ='*↯︙تم اختيار مسلسل لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Viru Team .',url="t.me/VIRUUTEAM"}},
+{{text = '↯ Viru Team .',url="t.me/FF7IF"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8940,7 +8940,7 @@ local TkeedList = DevRio:scard(Viru.."Rio:Rio:Tkeed:"..ChatId) or 0
 local AdminsList = DevRio:scard(Viru.."Rio:Admins:"..ChatId) or 0
 local VipList = DevRio:scard(Viru.."Rio:VipMem:"..ChatId) or 0
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..ChatId))
-if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/VIRUUTEAM' end
+if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/FF7IF' end
 tdcli_function({ID ="GetChat",chat_id_=ChatId},function(arg,dp)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = ChatId:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 if dp.id_ then
@@ -8950,7 +8950,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,Rio) 
 if Rio.first_name_ ~= false then
-ConstructorRio = "["..Rio.first_name_.."](T.me/"..(Rio.username_ or "VIRUUTEAM")..")"
+ConstructorRio = "["..Rio.first_name_.."](T.me/"..(Rio.username_ or "FF7IF")..")"
 else 
 ConstructorRio = "حساب محذوف"
 end
@@ -9669,7 +9669,7 @@ local text =  [[
 ↯︙م5 ↫ اوامر المطورين
 ↯︙م6 ↫ اوامر الاعضاء
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]] 
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end
@@ -9738,7 +9738,7 @@ local text =  [[
 ↯︙البوتات بالطرد
 ↯︙البوتات بالتقيد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]]
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9813,7 +9813,7 @@ local text =  [[
 ↯︙تقييد يوم + عدد الايام
 ↯︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]]
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9874,7 +9874,7 @@ local text =  [[
 ↯︙ردود المدير • ردود المطور • التحقق
 ↯︙ضافني • حساب العمر • الزخرفه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]]
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -9933,7 +9933,7 @@ local text =  [[
 ↯︙المنشئين الاساسيين 
 ↯︙حذف جميع الرتب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]]
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -10020,7 +10020,7 @@ local text =  [[
 ↯︙ترحيب البوت • المغادره
 ↯︙البوت الخدمي • التواصل
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]]
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end end
@@ -10070,7 +10070,7 @@ local text =  [[
 ↯︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ↯︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-↯︙[Source Channel](https://t.me/VIRUUTEAM)
+↯︙[Source Channel](https://t.me/FF7IF)
 ]]
 Dev_Rio(msg.chat_id_, msg.id_, 1, (Help or text), 1, 'md')
 end
@@ -10320,7 +10320,7 @@ Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙لم يتم تعيين قناة الا�
 end end end end
 --     Source Viru     --
 if text == 'القناة' or text == 'قناة السورس' or text == 'قناه السورس' or text == 'قنات السورس' then 
-Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙Channel ↬ @VIRUUTEAM', 1, 'html')    
+Dev_Rio(msg.chat_id_, msg.id_, 1, '↯︙Channel ↬ @FF7IF', 1, 'html')    
 end 
 --     Source Viru     --
 if Sudo(msg) then 
@@ -10452,7 +10452,7 @@ end
 end 
 ------------------------------------------------
 -- This Source Was Developed By (Rio) @W5555.--
---   This Is The Source Channel @VIRUUTEAM .   --
+--   This Is The Source Channel @FF7IF .   --
 --                - Viru -                 --
---        -- https://t.me/VIRUUTEAM --         --
+--        -- https://t.me/FF7IF --         --
 ------------------------------------------------ 
