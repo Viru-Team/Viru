@@ -3817,7 +3817,7 @@ Welcome To Source
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '↯ Source Channel',url="https://t.me/VIRUUTEAM"},{text = '↯ Exp Source',url="https://t.me/VIRUUTEAM"}},
+{{text = '↯ Source Channel',url="https://t.me/FF7iF"},{text = '↯ Exp Source',url="https://t.me/ltttli"}},
 {{text = '↯ Developer',url="t.me/IlTTTl"},{text = '↯ Developer 2',url="t.me/IIIIlllllIll"}},
 {{text = '↯ Tws Viru',url="https://t.me/iltttbot"}},
 }
