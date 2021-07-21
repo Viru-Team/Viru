@@ -9151,7 +9151,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:gif:Rio'..msg.chat_id_,true)  
 end
 if text == "متحركه" and not DevRio:get(Viru..'Rio:gif:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/animation.php')
+data,res = https.request('https://ccccxcc.ml/David/animation.php')
 if res == 200 then
 animation = json:decode(data)
 if animation.Info == true then
@@ -9177,7 +9177,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:memz:Rio'..msg.chat_id_,true)  
 end
 if text == "ميمز" and not DevRio:get(Viru..'Rio:memz:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/memz.php')
+data,res = https.request('https://ccccxcc.ml/David/memz.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9203,7 +9203,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:Audios:Rio'..msg.chat_id_,true)  
 end
 if text == "غنيلي" and not DevRio:get(Viru..'Rio:Audios:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/Audios.php')
+data,res = https.request('https://ccccxcc.ml/David/Audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9229,7 +9229,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:mp3:Rio'..msg.chat_id_,true)  
 end
 if text == "اغنيه" and not DevRio:get(Viru..'Rio:mp3:Rio'..msg.chat_id_) and ChCheck(msg) or text == "اغاني" and not DevRio:get(Viru..'Rio:mp3:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/mp3.php')
+data,res = https.request('https://ccccxcc.ml/David/mp3.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9255,7 +9255,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:Remix:Rio'..msg.chat_id_,true)  
 end
 if text == "ريمكس" and not DevRio:get(Viru..'Rio:Remix:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/Remix.php')
+data,res = https.request('https://ccccxcc.ml/David/Remix.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9281,7 +9281,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:Photo:Rio'..msg.chat_id_,true)  
 end
 if text == "صوره" and not DevRio:get(Viru..'Rio:Photo:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/Photo.php')
+data,res = https.request('https://ccccxcc.ml/David/Photo.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -9307,7 +9307,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:Anime:Rio'..msg.chat_id_,true)  
 end
 if text == "انمي" and not DevRio:get(Viru..'Rio:Anime:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/Anime.php')
+data,res = https.request('https://ccccxcc.ml/David/Anime.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -9333,7 +9333,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:Movies:Rio'..msg.chat_id_,true)  
 end
 if text == "فلم" and not DevRio:get(Viru..'Rio:Movies:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/Movies.php')
+data,res = https.request('https://ccccxcc.ml/David/Movies.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -9359,7 +9359,7 @@ riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ViruTeam, 14, string.len(ms
 DevRio:set(Viru..'Rio:Series:Rio'..msg.chat_id_,true)  
 end
 if text == "مسلسل" and not DevRio:get(Viru..'Rio:Series:Rio'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/Viru/Series.php')
+data,res = https.request('https://ccccxcc.ml/David/Series.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
